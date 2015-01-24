@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<meta name="description" content="">
+	<meta name="author" content="Hank Chiu">
+
+	<title>LightItem.js demo</title>
+
+	<link href="css/LightItem.css" rel="stylesheet">
+	<style type="text/css">
+		.style1{
+			background-color: red;
+			color: white;
+			text-align: center;
+			vertical-align: middle;
+			line-height: 100%;
+			padding: 20px;
+			margin: 20px;
+		}
+		.style2{
+			text-align: center;
+			border: solid 1px grey;
+			padding: 20px;
+		}
+	</style>
+
+	<script src="js/LightItem.js"></script>
+	<script type="text/javascript">
+		function lightDom(e){
+			new LightItem({ items: [e.target]}).show();
+		};
+		function lightHtml(e){
+			new LightItem({ items: [e.currentTarget.innerHTML]}).show();
+		};
+	</script>
+</head>
+
+<body>
+<div id="main-wrapper">
+	<div onclick="lightDom(event);" class="style1">Click to light this DOM</div>
+
+	<div onclick="lightHtml(event);"><div class="style2">Click to light this <span style="font-weight:bold">html</span> code</div></div>
+</div>
+
+<!-- LightItem DOM would be append here -->
+
+</body>
+
+</html>

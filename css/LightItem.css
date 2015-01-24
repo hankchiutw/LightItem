@@ -1,0 +1,49 @@
+/*========================
+**
+**	LightItem.css: style file for LightItem.js, a javascript library for light box effects.
+**	Author: Hank Chiu @ 2015.1.24
+**
+*========================*/
+
+#main-wrapper{
+	width: 100%;
+}
+.light-item-wrapper{
+	position: fixed;
+	z-index: 9999;
+	top: -300px;
+	left: 0px;
+	right: -20px;	/* -20px to hide */
+	bottom: 0px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	text-align: center;
+	padding-top: 80px;
+
+	background-color: rgba(0,0,0,0);
+	opacity: 0;
+	transition: all ease-out 0.5s;
+}
+.light-item-wrapper.active{
+	background-color: rgba(0,0,0,0.3);
+	top: 0px;
+	opacity: 1;
+	transition: all ease-out 0.5s;
+}
+.light-item-wrapper .light-item-content{
+	display: inline-block;	
+	width: 80%;
+	background-color: white;
+	padding: 16px 14px 16px;;
+	margin-bottom: 20px;
+	box-shadow: 3px 3px 7px #444;
+	-webkit-box-shadow: 3px 3px 7px #444;
+	-moz-box-shadow: 3px 3px 7px #444;
+}
+.close-symbol{
+	float: right;
+	transform: rotate(45deg);
+	line-height: 70%;
+	font-size: 40px;
+	cursor: pointer;
+}

@@ -7,7 +7,7 @@
 *========================*/
 
 var LightItem = function(view){
-	this.id = view.id || "light-item-"+new Date().getTime();
+	this.id = view.id || "light-item-"+Math.random();
 	this.baseId = view.baseId || LightItem.defaultBaseId;
 	this.title = view.title;
 

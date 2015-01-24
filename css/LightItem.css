@@ -40,10 +40,13 @@
 	-webkit-box-shadow: 3px 3px 7px #444;
 	-moz-box-shadow: 3px 3px 7px #444;
 }
-.close-symbol{
+.light-item-wrapper .top-row{
+	margin: 0px;
+}
+.light-item-wrapper .close-symbol{
 	float: right;
 	transform: rotate(45deg);
-	line-height: 70%;
+	line-height: 0;
 	font-size: 40px;
 	cursor: pointer;
 }

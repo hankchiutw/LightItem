@@ -44,7 +44,7 @@ var LightItem = function(view){
 
 LightItem.prototype = {
 	setItems: function(items){
-		this.contentDom.innerHTML = "<span class='close-symbol' data-close-anchor=true>+</span>"+(this.title!==undefined)?"<h3>"+this.title+"</h3>":"";
+		this.contentDom.innerHTML = "<p class='top-row'>&nbsp;<span class='close-symbol' data-close-anchor=true>+</span>"+(this.title!==undefined?"<h3>"+this.title+"</h3>":"")+"</p>";
 
 		var aThis = this;
 		if(items !== undefined){

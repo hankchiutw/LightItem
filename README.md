@@ -8,10 +8,10 @@ Set you page structure like:
 ```
 ...
 <body>
-<div id="main-wrapper">
-<!-- put your html code here -->
-</div>
-<!-- LightItem DOM would be append here -->
+    <div id="main-wrapper">
+        <!-- put your html code here -->
+    </div>
+    <!-- LightItem DOM would be appended here -->
 </body>
 ...
 ```

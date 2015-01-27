@@ -2,7 +2,19 @@
 [LightItem](http://hankchiu.tw/LightItem) is a javascript library for light box effect. It is pure native javascript code and CSS. You can use it with any third party libraries by yourself.
 
 ## Getting Started
-Just include LightItem.js and LightItem.css and call with correct path.
+Include LightItem.js and LightItem.css and call with correct path.
+
+Set you page structure like:
+```
+...
+<body>
+<div id="main-wrapper">
+<!-- put your html code here -->
+</div>
+<!-- LightItem DOM would be append here -->
+</body>
+...
+```
 
 How to use?
 ---
